@@ -1,9 +1,12 @@
 import React from 'react'
+import { Outlet } from 'react-router'
+import CustomNavbar from './CustomNavbar'
 
 function Home() {
   return (
     <div>
-      This is Home page
+      <CustomNavbar />
+      <Outlet />
     </div>
   )
 }
