@@ -8,12 +8,14 @@ import {
   Button,
   FormControl,
   InputLabel,
-  Select
+  Select,
+  MenuItem
 } from "@mui/material";
 import TitleIcon from "@mui/icons-material/Title";
 import DescriptionIcon from "@mui/icons-material/Description";
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import PublishIcon from "@mui/icons-material/Publish"
 
 import React from "react";
 
@@ -88,9 +90,12 @@ function Upload() {
                 }
               }}
               >
-                
+                <MenuItem value='Public'>Public</MenuItem>
+                <MenuItem value='Unlisted'>Unlisted</MenuItem>
+                <MenuItem value='Private'>Private</MenuItem>
               </Select>
             </FormControl>
+            <Button variant="contained" startIcon={<PublishIcon />}>Publish</Button>
           </Box>
         </Paper>
       </Container>
