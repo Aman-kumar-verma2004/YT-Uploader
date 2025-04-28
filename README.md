@@ -1,8 +1,4 @@
-Here's a sample README section for your project:
-
-
-
-# YT Uploader
+YT Uploader
 
 YT Uploader is a Spring Boot-based application that allows users to upload videos directly to YouTube using YouTube's Data API. The application provides an interface for users to input video details such as title, description, visibility, and the video file itself. Once the video is uploaded, the application communicates with YouTube's servers to upload the content, and returns a success message if the upload is successful.
 
